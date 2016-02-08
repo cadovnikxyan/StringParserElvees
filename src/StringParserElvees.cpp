@@ -11,32 +11,46 @@
 #include <boost/thread.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/shared_ptr.hpp>
+#include <boost/filesystem.hpp>
 #include <vector>
 
 using namespace std;
 
 
-void fileOpen(boost::shared_ptr<std::string> arr,string filepath){
+void fileOpen(boost::shared_ptr<std::string> stringForParse,boost::shared_ptr<std::string> splitString,string filepath){
 
 		static boost::mutex ioMutex;
 		boost::mutex::scoped_lock l(ioMutex);
+		vector<string> str_v;
 	    std::string str((std::istreambuf_iterator<char>(*(std::auto_ptr<std::ifstream>(new std::ifstream(filepath.c_str()))).get())), std::istreambuf_iterator<char>()
 	    );
-	    arr->append(str.c_str());
+	    boost::split(str_v,str,boost::is_any_of("\n"));
+	    string buf=str_v.at(0);
+	    stringForParse->append(buf.c_str());
+	    for(size_t i=1;i<str_v.size();i++){
+	    	splitString->append("||");
+			splitString->append(str_v.at(i).c_str());
+
+	    }
 
 }
 
 
 
-void fileWrite(const char* filename, boost::shared_ptr<std::string> strings){
+void fileWrite(const char* filename, boost::shared_ptr<std::string> strings,boost::shared_ptr<std::string> splitString){
 
-			vector<string> str_v;
-			boost::split(str_v,*strings,boost::is_any_of("||"));
-			ofstream fout(filename,std::ios::app);
-			for(size_t i=0;i<str_v.size();i++){
-				fout<<str_v.at(i)<<"\n";
+			vector<string> str_Sp;
+			boost::split(str_Sp,*splitString,boost::is_any_of("||"));
+			for(size_t j=0;j<str_Sp.size();j++){
+				vector<string> str_v;
+				boost::split(str_v,*strings,boost::is_any_of(str_Sp.at(j).c_str()));
+				ofstream fout(filename,std::ios::app);
+				for(size_t i=0;i<str_v.size();i++){
+					fout<<str_v.at(i)<<"\n";
+				}
+
+				fout.close();
 			}
-			fout.close();
 
 }
 
@@ -54,8 +68,12 @@ string fileOut;
 						}else{
 							try{
 								string str(argv[i+1]);
-								filepath.push_back(str);
-
+								boost::filesystem::path p(str.c_str());
+								for(auto i= boost::filesystem::directory_iterator(p); i!=boost::filesystem::directory_iterator();i++){
+									if(!boost::filesystem::is_directory(i->path())){
+										filepath.push_back(i->path().filename().string());
+									}
+								}
 							}catch(...){
 								cout<<"123"<<endl;
 							}
@@ -65,12 +83,13 @@ string fileOut;
 
 			boost::thread_group g;
 			boost::shared_ptr<std::string> str(new string(""));
+			boost::shared_ptr<std::string> strSplit(new string(""));
 			for(size_t i=0;i<filepath.size()-1;i++){
 				string path=filepath.at(i);
-				g.create_thread(boost::bind(fileOpen,str,path));
+				g.create_thread(boost::bind(fileOpen,str,strSplit,path));
 		}
 				g.join_all();
-				fileWrite(fileOut.c_str(),str);
+				fileWrite(fileOut.c_str(),str,strSplit);
 
 	}else{
 		cout<<"arguments is null"<<endl;

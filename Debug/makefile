@@ -44,7 +44,7 @@ all: StringParserElvees
 StringParserElvees: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/home/alexey/boost_1_60_0/stage/lib -o "StringParserElvees" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -LD:/boost_1_60_0/stage/lib -o "StringParserElvees" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

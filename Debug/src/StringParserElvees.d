@@ -65,6 +65,7 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/type_traits/is_rvalue_reference.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/is_function.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/detail/is_function_ptr_helper.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/declval.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/remove_reference.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/remove_cv.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/decay.hpp \
@@ -77,12 +78,12 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/move/utility_core.hpp \
  /home/alexey/boost_1_60_0/boost/move/core.hpp \
  /home/alexey/boost_1_60_0/boost/move/detail/workaround.hpp \
- /home/alexey/boost_1_60_0/boost/move/detail/type_traits.hpp \
+ /home/alexey/boost_1_60_0/boost/move/detail/config_end.hpp \
  /home/alexey/boost_1_60_0/boost/move/detail/meta_utils.hpp \
  /home/alexey/boost_1_60_0/boost/move/detail/meta_utils_core.hpp \
  /home/alexey/boost_1_60_0/boost/static_assert.hpp \
- /home/alexey/boost_1_60_0/boost/move/detail/config_end.hpp \
  /home/alexey/boost_1_60_0/boost/move/traits.hpp \
+ /home/alexey/boost_1_60_0/boost/move/detail/type_traits.hpp \
  /home/alexey/boost_1_60_0/boost/thread/detail/lockable_wrapper.hpp \
  /home/alexey/boost_1_60_0/boost/thread/lock_options.hpp \
  /home/alexey/boost_1_60_0/boost/thread/lock_types.hpp \
@@ -392,23 +393,7 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/ratio/ratio_fwd.hpp \
  /home/alexey/boost_1_60_0/boost/ratio/detail/overflow_helpers.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/common_type.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/declval.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/detail/common_type_impl.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/detail/common_arithmetic_type.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/detail/composite_pointer_type.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/copy_cv.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_const.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_volatile.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/add_const.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/add_volatile.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/detail/composite_member_pointer_type.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/remove_pointer.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/type_identity.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_union.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_pointer.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_member_pointer.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_member_function_pointer.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/detail/mp_defer.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/is_unsigned.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/is_enum.hpp \
  /home/alexey/boost_1_60_0/boost/chrono/detail/is_evenly_divisible_by.hpp \
@@ -435,6 +420,9 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/thread/pthread/thread_heap_alloc.hpp \
  /home/alexey/boost_1_60_0/boost/thread/detail/make_tuple_indices.hpp \
  /home/alexey/boost_1_60_0/boost/thread/detail/invoke.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_pointer.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_member_function_pointer.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp \
  /home/alexey/boost_1_60_0/boost/thread/detail/is_convertible.hpp \
  /home/alexey/boost_1_60_0/boost/core/ref.hpp \
  /home/alexey/boost_1_60_0/boost/utility/addressof.hpp \
@@ -452,7 +440,6 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/visit_each.hpp \
  /home/alexey/boost_1_60_0/boost/core/is_same.hpp \
  /home/alexey/boost_1_60_0/boost/bind/storage.hpp \
- /home/alexey/boost_1_60_0/boost/bind/bind_template.hpp \
  /home/alexey/boost_1_60_0/boost/bind/bind_cc.hpp \
  /home/alexey/boost_1_60_0/boost/bind/bind_mf_cc.hpp \
  /home/alexey/boost_1_60_0/boost/bind/bind_mf2_cc.hpp \
@@ -483,7 +470,6 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/move/default_delete.hpp \
  /home/alexey/boost_1_60_0/boost/move/adl_move_swap.hpp \
  /home/alexey/boost_1_60_0/boost/move/make_unique.hpp \
- /home/alexey/boost_1_60_0/boost/move/detail/fwd_macros.hpp \
  /home/alexey/boost_1_60_0/boost/thread/shared_mutex.hpp \
  /home/alexey/boost_1_60_0/boost/thread/pthread/shared_mutex.hpp \
  /home/alexey/boost_1_60_0/boost/thread/once.hpp \
@@ -520,59 +506,10 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/thread/detail/nullary_function.hpp \
  /home/alexey/boost_1_60_0/boost/thread/detail/memory.hpp \
  /home/alexey/boost_1_60_0/boost/thread/csbl/memory/pointer_traits.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/pointer_traits.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/detail/config_begin.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/detail/workaround.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/pointer_rebind.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/detail/pointer_element.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/detail/mpl.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/detail/config_end.hpp \
  /home/alexey/boost_1_60_0/boost/thread/csbl/memory/allocator_arg.hpp \
- /home/alexey/boost_1_60_0/boost/container/scoped_allocator.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/config_begin.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/workaround.hpp \
- /home/alexey/boost_1_60_0/boost/container/allocator_traits.hpp \
- /home/alexey/boost_1_60_0/boost/container/container_fwd.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/std_fwd.hpp \
- /home/alexey/boost_1_60_0/boost/move/detail/std_ns_begin.hpp \
- /home/alexey/boost_1_60_0/boost/move/detail/std_ns_end.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/mpl.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/config_end.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/type_traits.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/placement_new.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/detail/has_member_function_callable_with.hpp \
- /home/alexey/boost_1_60_0/boost/container/scoped_allocator_fwd.hpp \
- /home/alexey/boost_1_60_0/boost/container/uses_allocator_fwd.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/dispatch_uses_allocator.hpp \
- /home/alexey/boost_1_60_0/boost/container/uses_allocator.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/addressof.hpp \
- /home/alexey/boost_1_60_0/boost/container/detail/pair.hpp \
- /home/alexey/boost_1_60_0/boost/intrusive/detail/minimal_pair_header.hpp \
  /home/alexey/boost_1_60_0/boost/thread/csbl/memory/allocator_traits.hpp \
  /home/alexey/boost_1_60_0/boost/thread/csbl/memory/scoped_allocator.hpp \
  /home/alexey/boost_1_60_0/boost/thread/csbl/memory/shared_ptr.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/make_shared.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/make_shared_object.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/detail/sp_forward.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/type_with_alignment.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/alignment_of.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_pod.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_scalar.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/make_shared_array.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_count_impl.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_allocator.hpp \
- /home/alexey/boost_1_60_0/boost/align/align.hpp \
- /home/alexey/boost_1_60_0/boost/align/detail/align.hpp \
- /home/alexey/boost_1_60_0/boost/align/detail/address.hpp \
- /home/alexey/boost_1_60_0/boost/align/detail/is_alignment.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_traits.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_utility.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/has_trivial_constructor.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_default_constructible.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/has_trivial_destructor.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_destructible.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/detail/sp_if_array.hpp \
- /home/alexey/boost_1_60_0/boost/smart_ptr/allocate_shared_array.hpp \
  /home/alexey/boost_1_60_0/boost/utility/result_of.hpp \
  /home/alexey/boost_1_60_0/boost/preprocessor/iteration/iterate.hpp \
  /home/alexey/boost_1_60_0/boost/preprocessor/array/elem.hpp \
@@ -604,7 +541,11 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/tuple/tuple.hpp \
  /home/alexey/boost_1_60_0/boost/tuple/detail/tuple_basic.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/cv_traits.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/add_const.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/add_volatile.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/add_cv.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_const.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_volatile.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/remove_const.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/remove_volatile.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/function_traits.hpp \
@@ -628,6 +569,7 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/type_traits/has_plus.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/detail/has_binary_operator.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/is_fundamental.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/remove_pointer.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/has_plus_assign.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/has_minus.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/has_minus_assign.hpp \
@@ -637,6 +579,32 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/thread/executors/executor.hpp \
  /home/alexey/boost_1_60_0/boost/thread/executors/work.hpp \
  /home/alexey/boost_1_60_0/boost/thread/csbl/functional.hpp \
+ /home/alexey/boost_1_60_0/boost/thread/executors/executor_adaptor.hpp \
+ /home/alexey/boost_1_60_0/boost/thread/executors/generic_executor_ref.hpp \
+ /home/alexey/boost_1_60_0/boost/optional.hpp \
+ /home/alexey/boost_1_60_0/boost/optional/optional.hpp \
+ /home/alexey/boost_1_60_0/boost/core/explicit_operator_bool.hpp \
+ /home/alexey/boost_1_60_0/boost/optional/bad_optional_access.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/alignment_of.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/has_nothrow_constructor.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_default_constructible.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/type_with_alignment.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_pod.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_scalar.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_member_pointer.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_nothrow_move_assignable.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/has_trivial_move_assign.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_assignable.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/has_nothrow_assign.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_nothrow_move_constructible.hpp \
+ /home/alexey/boost_1_60_0/boost/detail/reference_content.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/has_nothrow_copy.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_copy_constructible.hpp \
+ /home/alexey/boost_1_60_0/boost/mpl/void.hpp \
+ /home/alexey/boost_1_60_0/boost/none.hpp \
+ /home/alexey/boost_1_60_0/boost/none_t.hpp \
+ /home/alexey/boost_1_60_0/boost/utility/compare_pointees.hpp \
+ /home/alexey/boost_1_60_0/boost/optional/optional_fwd.hpp \
  /home/alexey/boost_1_60_0/boost/function.hpp \
  /home/alexey/boost_1_60_0/boost/preprocessor/iterate.hpp \
  /home/alexey/boost_1_60_0/boost/function/detail/prologue.hpp \
@@ -644,7 +612,10 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/function/function_base.hpp \
  /home/alexey/boost_1_60_0/boost/integer.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/has_trivial_copy.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/has_trivial_destructor.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_destructible.hpp \
  /home/alexey/boost_1_60_0/boost/type_traits/composite_traits.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/is_union.hpp \
  /home/alexey/boost_1_60_0/boost/function_equal.hpp \
  /home/alexey/boost_1_60_0/boost/function/function_fwd.hpp \
  /home/alexey/boost_1_60_0/boost/preprocessor/enum.hpp \
@@ -654,9 +625,21 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/function/detail/maybe_include.hpp \
  /home/alexey/boost_1_60_0/boost/function/function_template.hpp \
  /home/alexey/boost_1_60_0/boost/detail/no_exceptions_support.hpp \
- /home/alexey/boost_1_60_0/boost/thread/executors/executor_adaptor.hpp \
- /home/alexey/boost_1_60_0/boost/thread/executors/generic_executor_ref.hpp \
- /home/alexey/boost_1_60_0/boost/type_traits/is_copy_constructible.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/make_shared.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/make_shared_object.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/detail/sp_forward.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/make_shared_array.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_count_impl.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_allocator.hpp \
+ /home/alexey/boost_1_60_0/boost/align/align.hpp \
+ /home/alexey/boost_1_60_0/boost/align/detail/align.hpp \
+ /home/alexey/boost_1_60_0/boost/align/detail/address.hpp \
+ /home/alexey/boost_1_60_0/boost/align/detail/is_alignment.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_traits.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_utility.hpp \
+ /home/alexey/boost_1_60_0/boost/type_traits/has_trivial_constructor.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/detail/sp_if_array.hpp \
+ /home/alexey/boost_1_60_0/boost/smart_ptr/allocate_shared_array.hpp \
  /home/alexey/boost_1_60_0/boost/detail/atomic_undef_macros.hpp \
  /home/alexey/boost_1_60_0/boost/detail/atomic_redef_macros.hpp \
  /home/alexey/boost_1_60_0/boost/algorithm/string.hpp \
@@ -727,7 +710,6 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
  /home/alexey/boost_1_60_0/boost/mpl/aux_/preprocessed/gcc/bind.hpp \
  /home/alexey/boost_1_60_0/boost/mpl/aux_/full_lambda.hpp \
  /home/alexey/boost_1_60_0/boost/mpl/quote.hpp \
- /home/alexey/boost_1_60_0/boost/mpl/void.hpp \
  /home/alexey/boost_1_60_0/boost/mpl/aux_/has_type.hpp \
  /home/alexey/boost_1_60_0/boost/mpl/aux_/config/bcc.hpp \
  /home/alexey/boost_1_60_0/boost/mpl/aux_/preprocessed/gcc/quote.hpp \
@@ -950,6 +932,8 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/type_traits/detail/is_function_ptr_helper.hpp:
 
+/home/alexey/boost_1_60_0/boost/type_traits/declval.hpp:
+
 /home/alexey/boost_1_60_0/boost/type_traits/remove_reference.hpp:
 
 /home/alexey/boost_1_60_0/boost/type_traits/remove_cv.hpp:
@@ -974,7 +958,7 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/move/detail/workaround.hpp:
 
-/home/alexey/boost_1_60_0/boost/move/detail/type_traits.hpp:
+/home/alexey/boost_1_60_0/boost/move/detail/config_end.hpp:
 
 /home/alexey/boost_1_60_0/boost/move/detail/meta_utils.hpp:
 
@@ -982,9 +966,9 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/static_assert.hpp:
 
-/home/alexey/boost_1_60_0/boost/move/detail/config_end.hpp:
-
 /home/alexey/boost_1_60_0/boost/move/traits.hpp:
+
+/home/alexey/boost_1_60_0/boost/move/detail/type_traits.hpp:
 
 /home/alexey/boost_1_60_0/boost/thread/detail/lockable_wrapper.hpp:
 
@@ -1604,39 +1588,7 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/type_traits/common_type.hpp:
 
-/home/alexey/boost_1_60_0/boost/type_traits/declval.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/detail/common_type_impl.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/detail/common_arithmetic_type.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/detail/composite_pointer_type.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/copy_cv.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_const.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_volatile.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/add_const.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/add_volatile.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/detail/composite_member_pointer_type.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/remove_pointer.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/type_identity.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_union.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_pointer.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_member_pointer.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_member_function_pointer.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp:
+/home/alexey/boost_1_60_0/boost/type_traits/detail/mp_defer.hpp:
 
 /home/alexey/boost_1_60_0/boost/type_traits/is_unsigned.hpp:
 
@@ -1690,6 +1642,12 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/thread/detail/invoke.hpp:
 
+/home/alexey/boost_1_60_0/boost/type_traits/is_pointer.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_member_function_pointer.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp:
+
 /home/alexey/boost_1_60_0/boost/thread/detail/is_convertible.hpp:
 
 /home/alexey/boost_1_60_0/boost/core/ref.hpp:
@@ -1723,8 +1681,6 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 /home/alexey/boost_1_60_0/boost/core/is_same.hpp:
 
 /home/alexey/boost_1_60_0/boost/bind/storage.hpp:
-
-/home/alexey/boost_1_60_0/boost/bind/bind_template.hpp:
 
 /home/alexey/boost_1_60_0/boost/bind/bind_cc.hpp:
 
@@ -1785,8 +1741,6 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 /home/alexey/boost_1_60_0/boost/move/adl_move_swap.hpp:
 
 /home/alexey/boost_1_60_0/boost/move/make_unique.hpp:
-
-/home/alexey/boost_1_60_0/boost/move/detail/fwd_macros.hpp:
 
 /home/alexey/boost_1_60_0/boost/thread/shared_mutex.hpp:
 
@@ -1860,111 +1814,13 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/thread/csbl/memory/pointer_traits.hpp:
 
-/home/alexey/boost_1_60_0/boost/intrusive/pointer_traits.hpp:
-
-/home/alexey/boost_1_60_0/boost/intrusive/detail/config_begin.hpp:
-
-/home/alexey/boost_1_60_0/boost/intrusive/detail/workaround.hpp:
-
-/home/alexey/boost_1_60_0/boost/intrusive/pointer_rebind.hpp:
-
-/home/alexey/boost_1_60_0/boost/intrusive/detail/pointer_element.hpp:
-
-/home/alexey/boost_1_60_0/boost/intrusive/detail/mpl.hpp:
-
-/home/alexey/boost_1_60_0/boost/intrusive/detail/config_end.hpp:
-
 /home/alexey/boost_1_60_0/boost/thread/csbl/memory/allocator_arg.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/scoped_allocator.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/config_begin.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/workaround.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/allocator_traits.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/container_fwd.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/std_fwd.hpp:
-
-/home/alexey/boost_1_60_0/boost/move/detail/std_ns_begin.hpp:
-
-/home/alexey/boost_1_60_0/boost/move/detail/std_ns_end.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/mpl.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/config_end.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/type_traits.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/placement_new.hpp:
-
-/home/alexey/boost_1_60_0/boost/intrusive/detail/has_member_function_callable_with.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/scoped_allocator_fwd.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/uses_allocator_fwd.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/dispatch_uses_allocator.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/uses_allocator.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/addressof.hpp:
-
-/home/alexey/boost_1_60_0/boost/container/detail/pair.hpp:
-
-/home/alexey/boost_1_60_0/boost/intrusive/detail/minimal_pair_header.hpp:
 
 /home/alexey/boost_1_60_0/boost/thread/csbl/memory/allocator_traits.hpp:
 
 /home/alexey/boost_1_60_0/boost/thread/csbl/memory/scoped_allocator.hpp:
 
 /home/alexey/boost_1_60_0/boost/thread/csbl/memory/shared_ptr.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/make_shared.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/make_shared_object.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/detail/sp_forward.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/type_with_alignment.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/alignment_of.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_pod.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_scalar.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/make_shared_array.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_count_impl.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_allocator.hpp:
-
-/home/alexey/boost_1_60_0/boost/align/align.hpp:
-
-/home/alexey/boost_1_60_0/boost/align/detail/align.hpp:
-
-/home/alexey/boost_1_60_0/boost/align/detail/address.hpp:
-
-/home/alexey/boost_1_60_0/boost/align/detail/is_alignment.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_traits.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_utility.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/has_trivial_constructor.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_default_constructible.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/has_trivial_destructor.hpp:
-
-/home/alexey/boost_1_60_0/boost/type_traits/is_destructible.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/detail/sp_if_array.hpp:
-
-/home/alexey/boost_1_60_0/boost/smart_ptr/allocate_shared_array.hpp:
 
 /home/alexey/boost_1_60_0/boost/utility/result_of.hpp:
 
@@ -2028,7 +1884,15 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/type_traits/cv_traits.hpp:
 
+/home/alexey/boost_1_60_0/boost/type_traits/add_const.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/add_volatile.hpp:
+
 /home/alexey/boost_1_60_0/boost/type_traits/add_cv.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_const.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_volatile.hpp:
 
 /home/alexey/boost_1_60_0/boost/type_traits/remove_const.hpp:
 
@@ -2076,6 +1940,8 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/type_traits/is_fundamental.hpp:
 
+/home/alexey/boost_1_60_0/boost/type_traits/remove_pointer.hpp:
+
 /home/alexey/boost_1_60_0/boost/type_traits/has_plus_assign.hpp:
 
 /home/alexey/boost_1_60_0/boost/type_traits/has_minus.hpp:
@@ -2094,6 +1960,58 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/thread/csbl/functional.hpp:
 
+/home/alexey/boost_1_60_0/boost/thread/executors/executor_adaptor.hpp:
+
+/home/alexey/boost_1_60_0/boost/thread/executors/generic_executor_ref.hpp:
+
+/home/alexey/boost_1_60_0/boost/optional.hpp:
+
+/home/alexey/boost_1_60_0/boost/optional/optional.hpp:
+
+/home/alexey/boost_1_60_0/boost/core/explicit_operator_bool.hpp:
+
+/home/alexey/boost_1_60_0/boost/optional/bad_optional_access.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/alignment_of.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/has_nothrow_constructor.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_default_constructible.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/type_with_alignment.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_pod.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_scalar.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_member_pointer.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_nothrow_move_assignable.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/has_trivial_move_assign.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_assignable.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/has_nothrow_assign.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_nothrow_move_constructible.hpp:
+
+/home/alexey/boost_1_60_0/boost/detail/reference_content.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/has_nothrow_copy.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_copy_constructible.hpp:
+
+/home/alexey/boost_1_60_0/boost/mpl/void.hpp:
+
+/home/alexey/boost_1_60_0/boost/none.hpp:
+
+/home/alexey/boost_1_60_0/boost/none_t.hpp:
+
+/home/alexey/boost_1_60_0/boost/utility/compare_pointees.hpp:
+
+/home/alexey/boost_1_60_0/boost/optional/optional_fwd.hpp:
+
 /home/alexey/boost_1_60_0/boost/function.hpp:
 
 /home/alexey/boost_1_60_0/boost/preprocessor/iterate.hpp:
@@ -2108,7 +2026,13 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/type_traits/has_trivial_copy.hpp:
 
+/home/alexey/boost_1_60_0/boost/type_traits/has_trivial_destructor.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_destructible.hpp:
+
 /home/alexey/boost_1_60_0/boost/type_traits/composite_traits.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/is_union.hpp:
 
 /home/alexey/boost_1_60_0/boost/function_equal.hpp:
 
@@ -2128,11 +2052,35 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 
 /home/alexey/boost_1_60_0/boost/detail/no_exceptions_support.hpp:
 
-/home/alexey/boost_1_60_0/boost/thread/executors/executor_adaptor.hpp:
+/home/alexey/boost_1_60_0/boost/smart_ptr/make_shared.hpp:
 
-/home/alexey/boost_1_60_0/boost/thread/executors/generic_executor_ref.hpp:
+/home/alexey/boost_1_60_0/boost/smart_ptr/make_shared_object.hpp:
 
-/home/alexey/boost_1_60_0/boost/type_traits/is_copy_constructible.hpp:
+/home/alexey/boost_1_60_0/boost/smart_ptr/detail/sp_forward.hpp:
+
+/home/alexey/boost_1_60_0/boost/smart_ptr/make_shared_array.hpp:
+
+/home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_count_impl.hpp:
+
+/home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_allocator.hpp:
+
+/home/alexey/boost_1_60_0/boost/align/align.hpp:
+
+/home/alexey/boost_1_60_0/boost/align/detail/align.hpp:
+
+/home/alexey/boost_1_60_0/boost/align/detail/address.hpp:
+
+/home/alexey/boost_1_60_0/boost/align/detail/is_alignment.hpp:
+
+/home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_traits.hpp:
+
+/home/alexey/boost_1_60_0/boost/smart_ptr/detail/array_utility.hpp:
+
+/home/alexey/boost_1_60_0/boost/type_traits/has_trivial_constructor.hpp:
+
+/home/alexey/boost_1_60_0/boost/smart_ptr/detail/sp_if_array.hpp:
+
+/home/alexey/boost_1_60_0/boost/smart_ptr/allocate_shared_array.hpp:
 
 /home/alexey/boost_1_60_0/boost/detail/atomic_undef_macros.hpp:
 
@@ -2273,8 +2221,6 @@ src/StringParserElvees.o: ../src/StringParserElvees.cpp \
 /home/alexey/boost_1_60_0/boost/mpl/aux_/full_lambda.hpp:
 
 /home/alexey/boost_1_60_0/boost/mpl/quote.hpp:
-
-/home/alexey/boost_1_60_0/boost/mpl/void.hpp:
 
 /home/alexey/boost_1_60_0/boost/mpl/aux_/has_type.hpp:
 

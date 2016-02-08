@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <fstream>
-//#include <string>
 #include <boost/thread.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/shared_ptr.hpp>
@@ -32,9 +31,7 @@ void fileOpen(boost::shared_ptr<std::string> arr,string filepath){
 void fileWrite(const char* filename, boost::shared_ptr<std::string> strings){
 
 			vector<string> str_v;
-//			string str=*strings;
 			boost::split(str_v,*strings,boost::is_any_of("||"));
-
 			ofstream fout(filename,std::ios::app);
 			for(size_t i=0;i<str_v.size();i++){
 				fout<<str_v.at(i)<<"\n";
